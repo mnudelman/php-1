@@ -9,7 +9,10 @@ session_start() ;
 <head>
     <meta charset="utf-8">
     <title>php-1-lesson-7</title>
+
     <meta name="description" content="ШП-php-1-lesson_7(MVC) ">
+=======
+    <meta name="description" content="ШП-php-1-lesson_7 ">
     <meta name="author" content="mnudelman@yandex.ru">
     <link rel="stylesheet" type="text/css" href="./styles/task.css">
     <style>
@@ -22,13 +25,9 @@ session_start() ;
 <body>
 
 
-<?php
-/**------КОНСТАНТЫ---------------**/
-include_once  __DIR__ . '/local.php' ;
-include_once VIEW_HTML_DIR . '/topMenu.php' ;
-?>
 <div class="comment">
-    <p><strong>Загрузка файлов на сервер.шаблон MVC</strong></p>
+    <p><strong>Загрузка файлов на сервер</strong></p>
+
     <p>
         Имеются следующие виды объектов: пользователь ->> альбом(галерея) ->> картинки.
     </p>
@@ -38,6 +37,7 @@ include_once VIEW_HTML_DIR . '/topMenu.php' ;
         Но редактировать альбом (помещать новые картинки, удалять надоевшие, преименовывать, ...)
         может только владелец, создавший альбом.
     </p>
+<<<<<<< HEAD
 
     <h3>Реализация  MVC</h3>
     <p>Иерархия контроллеров:  index.php -> (indexGallery,indexUser) <br>
@@ -60,6 +60,8 @@ include_once VIEW_HTML_DIR . '/topMenu.php' ;
 
     </p>
 
+=======
+>>>>>>> 29b4783f17f831b7be04a47ce35dd5e3370a54b2
     <p>
         Добавление выполняется с атрибутом multiple в теге input. После добавления изображения можно переименовать.
     </p>

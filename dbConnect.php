@@ -15,8 +15,8 @@ $opt = [
 try {
     $pdo = new PDO($dsn, $user, $password, $opt) ;
 }catch (PDOException $e) {
-    $dbSuccessful = false ;
-    echo 'ERROR:подключение:'.$e->getMessage().LINE_FEED ;
+    $dbSuccessful = false;
+    echo 'ERROR:подключение:' . $e->getMessage() . LINE_FEED;
 }
 /** раз не умерли, надо запомнить */
 $_SESSION['dbSuccessful'] = $dbSuccessful ; // успех подключения к БД
